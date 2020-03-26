@@ -1,0 +1,18 @@
+spring:
+  rabbitmq:
+    host: 47.114.161.233
+    username: admin
+    password: admin
+    virtual-host: my_vhost
+    port: 5672
+    listener:
+      simple:
+        retry:
+          enabled: true
+          max-attempts: 4
+          initial-interval: 5000 #重试间隔时间（单位毫秒）
+          max-interval: 100000
+  application:
+    name: rabbit_boot_customer2
+server:
+  port: 9092

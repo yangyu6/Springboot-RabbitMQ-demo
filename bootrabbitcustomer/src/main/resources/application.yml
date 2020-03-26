@@ -1,0 +1,11 @@
+spring:
+  rabbitmq:
+    host: 47.114.161.233
+    username: admin
+    password: admin
+    virtual-host: my_vhost
+    port: 5672
+  application:
+    name: rabbit_boot_customer
+server:
+  port: 9091

@@ -1,0 +1,13 @@
+spring:
+  rabbitmq:
+    host: 47.114.161.233
+    username: admin
+    password: admin
+    virtual-host: my_vhost
+    port: 5672
+    publisher-returns: true
+    publisher-confirm-type:
+  application:
+    name: rabbit_boot_send
+server:
+  port: 9090
